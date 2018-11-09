@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-with, initial-scale=1" />
+    <title>九宫格</title>
+    <style type="text/css">
+        * {
+            /* 外边距初始化为零 */
+            margin: 0;
+            /* 内边距初始化为零 */
+            padding: 0;
+            /* 为每个元素加属性box-sizing 在实现九宫格的过程中不需要属性 box-sizing */
+            /*box-sizing: border-box;*/
+        }
+
+        #main {
+            /* 设置宽度为100% */
+            width: 100%;
+            /* 设置内边距为100% 把div撑开 形成一个正方形 */
+            padding-bottom: 100%;
+            /* 设置背景颜色为白色 */
+            background-color: #fff;
+            /* 设置左边内边距为 0.5% */
+            padding-left: 0.5%;
+            /* 设置右边内边距为 0.5% */
+            padding-right: 0.5%;
+        }
+
+        #main > div {
+            /* 设置宽度为父元素的31% */
+            width: 31%;
+            /* 设置内边距为31% 撑开元素 形成一个正方形 */
+            padding-bottom: 31%;
+            /* 设置背景颜色为橙色 */
+            background-color: orange;
+            border: 1% solid #fff;
+            /* 设置正方形四个角的弧度为边长的5% */
+            border-radius: 3%;
+            /* 设置元素向左浮动 */
+            float: left;
+            /* 设置外边距 上右下左 为父级正方形边长的1% */
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+    </div>
+</body>
+</html>

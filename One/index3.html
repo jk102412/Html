@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-with, initial-scale=1" />
+    <title>九宫格</title>
+    <style type="text/css">
+        * {
+            /* 外边距初始化为零 */
+            margin: 0;
+            /* 内边距初始化为零 */
+            padding: 0;
+            /* 为每个元素加属性box-sizing 在实现九宫格的过程中不需要属性 box-sizing */
+            /*box-sizing: border-box;*/
+        }
+
+        .main {
+            background-color: #fff;
+            width: 100%;
+            padding-bottom: 100%;
+            padding-left: 0.5%;
+        　　padding-top: 0.5%;
+        }
+        .main > div {
+            width: 31%;
+            padding-bottom: 31%;
+            /*border: 1% solid #fff;        */
+            background-color: mediumpurple;
+            border-radius: 3%;
+            float: left;
+            margin: 1%;
+        }   
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+    </div>
+    <a href="https://www.cnblogs.com/stella1024/p/8250189.html">参考资料</a>
+</body>
+</html>
